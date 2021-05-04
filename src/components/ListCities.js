@@ -69,8 +69,8 @@ const ListCities = () => {
   const getNearest = (e) => {
     e.preventDefault();
     setChoose([
-      parseInt(e.target.form[0].value),
-      parseInt(e.target.form[1].value),
+      parseFloat(e.target.form[0].value),
+      parseFloat(e.target.form[1].value),
     ]);
     const u = Data.map((e) => ({
       lat: e.centerLat,
