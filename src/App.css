@@ -127,6 +127,13 @@ body {
   .input {
     margin-right: 0;
   }
+  .selects {
+    height: 3rem;
+  }
+  select {
+    width: 100% !important;
+    height: 100% !important;
+  }
   .form {
     display: flex;
     flex-direction: column;
@@ -149,5 +156,11 @@ body {
   }
   .poly button {
     width: 100%;
+  }
+}
+
+@media screen and(max-height:600px) {
+  .selects {
+    height: 120px;
   }
 }
